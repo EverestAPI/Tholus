@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsAotCompatible>true</IsAotCompatible>
+        <VerifyReferenceAotCompatibility>true</VerifyReferenceAotCompatibility>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AsmResolver.DotNet" Version="6.0.0"/>
+        <PackageReference Include="JetBrains.Annotations" Version="2026.2.0"/>
+        <PackageReference Include="SharpYaml" Version="3.12.0"/>
+    </ItemGroup>
+
+</Project>

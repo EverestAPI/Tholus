@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Tholus.Api/Tholus.Api.csproj" />
+  <Project Path="Tholus.Cli/Tholus.Cli.csproj" />
+</Solution>

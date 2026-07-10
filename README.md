@@ -1,4 +1,7 @@
-# Tholus
+﻿# Tholus
 
-Commandline-enabled API to install and manage Everest installations and mods.
-Successor project to https://github.com/coloursofnoise/mons/.
+A C# application and class library that serves as the first-party core API and command line frontend to Celeste modding.
+
+Successor project to [coloursofnoise/mons](https://github.com/coloursofnoise/mons/).
+
+**Work in progress.**
