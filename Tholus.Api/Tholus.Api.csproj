@@ -6,6 +6,7 @@
         <Nullable>enable</Nullable>
         <IsAotCompatible>true</IsAotCompatible>
         <VerifyReferenceAotCompatibility>true</VerifyReferenceAotCompatibility>
+        <Version>0.1.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
