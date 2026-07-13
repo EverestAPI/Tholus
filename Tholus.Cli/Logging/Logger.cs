@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using Tholus.Cli.Config;
 
 namespace Tholus.Cli.Logging;
 
@@ -7,8 +8,6 @@ public static class Logger
     public static readonly string LogFilePath;
     private static readonly StreamWriter LogFileWriter;
     private static readonly Lock LogFileWriterLock = new();
-
-    public static LogLevel Level = LogLevel.Info;
 
     static Logger()
     {
@@ -54,7 +53,7 @@ public static class Logger
         [CallerFilePath] string? callerFile = null,
         [CallerLineNumber] int callerLine = 0)
     {
-        if (level < Level)
+        if (level < TholusConfig.Instance.LogLevel)
             return;
 
         // AsSpan() is an extension method, so this is safe
@@ -69,6 +68,6 @@ public static class Logger
     internal static void FlushAndClose()
     {
         lock (LogFileWriterLock)
-            LogFileWriter.Close();
+            LogFileWriter.Dispose();
     }
 }
